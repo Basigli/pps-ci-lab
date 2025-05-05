@@ -11,5 +11,6 @@ jobs:
         with:
             distribution: 'temurin'
             java-version: 21
+      - uses: olafurpg/setup-scala@v11
       - name: Build
         run: ./gradlew check
